@@ -1,5 +1,29 @@
 {
+  "name": "cypress2021",
+  "version": "1.0.0",
+  "description": "Cypress automation framework for AutomationExercise website",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:edge": "cypress run --browser edge",
+    "test": "cypress run",
+    "test:home": "cypress run --spec 'cypress/e2e/home.cy.js'"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "testing",
+    "e2e"
+  ],
+  "author": "Rajan",
+  "license": "MIT",
   "devDependencies": {
-    "cypress": "^14.3.3"
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^14.3.3",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-real-events": "^1.7.6"
   }
 }
